@@ -1,8 +1,8 @@
 name: Vib Build
 
 permissions:
-  contents: write # Allow actions to create release
-  packages: write # Allow pushing images to GHCR
+  contents: read
+  pull-requests: write
 
 on:
   push:
