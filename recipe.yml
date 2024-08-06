@@ -18,7 +18,6 @@ stages:
   - name: init-setup
     type: shell
     commands:
-    - lpkg --unlock
     - apt-get update
 
   # Put your custom actions behind this comment
@@ -53,7 +52,6 @@ stages:
     commands:
     - apt-get autoremove -y
     - apt-get clean
-    - lpkg --lock
 
   - name: fsguard
     type: fsguard
